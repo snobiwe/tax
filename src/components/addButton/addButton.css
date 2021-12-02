@@ -1,0 +1,14 @@
+
+
+.add_button {
+    width: 488px;
+    background: linear-gradient(90deg, rgba(255,79,79,1) 0%, rgba(220,49,49,1) 100%);
+    border: none;
+    border-radius: 6px;
+    margin: 40px 32px 32px 32px;
+    
+}
+
+.add_button_text {
+    color: white;
+}

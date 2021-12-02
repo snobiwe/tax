@@ -1,0 +1,23 @@
+.popup__button_close {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 27px;
+    right: 27px;
+}
+
+.close_button {
+    background-image: url(../../images/Vectorclose.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 18px;
+    min-height: 18px;
+    border: none;
+    background-color: white;
+}
+
+.close_button:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+

@@ -1,0 +1,13 @@
+@font-face {
+    src: url(../fonts/LabGrotesque-Regular.woff) format('woff');
+    src: url(../fonts/LabGrotesque-Regular.woff2) format('woff2');
+    font-family: 'LabGrotesque';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../fonts/LabGrotesque-Bold.woff) format('woff');
+    src: url(../fonts/LabGrotesque-Bold.woff2) format('woff2');
+    font-family: 'LabGrotesque';
+    font-weight: 500;
+}

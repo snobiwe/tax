@@ -1,0 +1,10 @@
+.start {
+    background: linear-gradient(90deg, rgba(255,79,79,1) 0%, rgba(220,49,49,1) 100%);
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'LabGrotesque', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

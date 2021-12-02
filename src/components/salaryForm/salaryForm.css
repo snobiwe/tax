@@ -1,0 +1,44 @@
+.salary_fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 488px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.popup_legend {
+    margin: 0 0 8px 0;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.salary_input {
+    margin: 0 0 8px 0;
+    height: 40px;
+    border: rgb(223, 227, 230) 1px solid;
+}
+
+.salary_input::placeholder {
+    line-height: 24px;
+    font-size: 14px;
+    padding: 0;
+    color: #BEC5CC;
+}
+
+.salary_button {
+    background: none;
+    border: none;
+    max-width: 78px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    color: #EA0029;
+}
+
+.salary_button:hover {
+    cursor: pointer;
+    color: #F53A31;
+}
