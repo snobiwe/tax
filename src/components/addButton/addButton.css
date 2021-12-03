@@ -12,3 +12,17 @@
 .add_button_text {
     color: white;
 }
+
+@media screen and (max-width: 780px) {
+    .add_button {
+        width: 389px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .add_button {
+        width: 288px;
+        margin: 40px auto 32px;
+        align-self: center;
+    }
+}

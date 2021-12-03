@@ -15,7 +15,7 @@ const Popup = memo(({ salary, question, button, close, advance }) => {
         <form>{salary}</form>
         <form>{advance}</form>
         <form>{question}</form>
-        <div className="popup__button_add">{button}</div>
+        {button}
       </div>
     </div>
   )

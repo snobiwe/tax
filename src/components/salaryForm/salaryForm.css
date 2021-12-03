@@ -42,3 +42,15 @@
     cursor: pointer;
     color: #F53A31;
 }
+
+@media screen and (max-width: 780px) {
+    .salary_fieldset {
+        max-width: 389px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .salary_fieldset {
+        max-width: 288px;
+    }
+}

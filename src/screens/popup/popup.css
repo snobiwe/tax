@@ -1,9 +1,7 @@
 .popup {
     background: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh; 
     display: flex;
     justify-content: center;
 }
@@ -15,6 +13,8 @@
     background: white;
     position: relative;
     align-self: center;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -34,3 +34,39 @@
     color: rgba(128, 128, 128, 1);
 }
 
+
+
+@media screen and (max-width: 780px) {
+    .popup_container {
+        max-width: 453px;
+    }
+
+    .popup_text {
+        max-width: 369px;
+        margin-left: 32px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+
+    .popup_container {
+        width: 100%;
+        border-radius: 0;
+        max-height: none;
+    }
+
+    .popup_title {
+        max-width: 288px;
+        margin-left: 16px;
+    }
+
+    .popup_text {
+        max-width: 288px;
+        line-height: 16px;
+        font-size: 12px;
+        margin: 16px auto 24px;
+    }
+    
+}

@@ -1,6 +1,9 @@
 .advance_legend {
     padding-top: 16px;
     margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
 }
 
 .advance_fieldset {
@@ -75,3 +78,16 @@
     background-color: #FF5E56;
     background-image: url('../../images/Vectorcheck.svg');
   }
+
+  @media screen and (max-width: 780px) {
+    .advance_fieldset {
+        max-width: 389px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .advance_fieldset {
+        max-width: 288px;
+        margin: 16px auto 24px;
+    }
+}
