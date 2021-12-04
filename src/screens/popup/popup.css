@@ -6,6 +6,8 @@
     justify-content: center;
 }
 
+
+
 .popup_container {
     max-width: 552px;
     max-height: 740px;
@@ -50,11 +52,12 @@
 
 @media screen and (max-width: 450px) {
     
+    
 
     .popup_container {
         width: 100%;
         border-radius: 0;
-        max-height: none;
+        min-height: 100vh;
     }
 
     .popup_title {

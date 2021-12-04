@@ -79,6 +79,13 @@
     background-image: url('../../images/Vectorcheck.svg');
   }
 
+  .advance_input:disabled+label::before {
+      background-color: #bec5cc;
+      background-image: url('../../images/Vectorcheck.svg');
+      border: none;
+      cursor: default;
+  }
+
   @media screen and (max-width: 780px) {
     .advance_fieldset {
         max-width: 389px;

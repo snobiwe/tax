@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useState, useCallback } from 'react'
 import './index.css'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -13,6 +13,14 @@ import AddButton from './components/addButton/addButton'
 import CloseButton from './components/closeButton/closeButton'
 
 const App = memo(() => {
+  const [inputValue, setInputValue] = useState('')
+
+  const customInputValue = useCallback((e) => {
+    const value = e.target.value
+    setInputValue(value)
+    console.log(e.target.value)
+  }, [])
+
   return (
     <Router>
       <Routes>
@@ -31,9 +39,14 @@ const App = memo(() => {
             <Page
               popup={
                 <Popup
-                  salary={<SalaryForm />}
+                  salary={
+                    <SalaryForm
+                      customInputValue={customInputValue}
+                      inputValue={inputValue}
+                    />
+                  }
                   question={<QuestionForm />}
-                  advance={<AdvanceForm />}
+                  advance={<AdvanceForm value={inputValue * 12 * 0.13} />}
                   button={<AddButton />}
                   close={<CloseButton path="/" />}
                 />

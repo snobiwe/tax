@@ -14,7 +14,7 @@ button:disabled {
     filter: none;
 }
 
-.button:hover:enabled   {
+.button:hover:enabled {
     cursor: pointer;
     background: #ffffff;
     color: black;
@@ -23,7 +23,7 @@ button:disabled {
 
 .button_text {
     font-family: 'LabGrotesque', sans-serif;
-    color: white;
+    /* color: white; */
     text-decoration: none;
     line-height: 24px;
     font-size: 16px;
@@ -31,4 +31,18 @@ button:disabled {
 }
 
 
+
+@media screen and (max-width: 450px) {
+    
+
+    .button {
+        max-width: 149px;
+    }
+
+    .button_text {
+        line-height: 16px;
+        font-size: 12px;  
+    }
+    
+}
 
