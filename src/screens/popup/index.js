@@ -1,9 +1,11 @@
 import React, { memo, useCallback, useMemo, useState } from 'react'
 import { MAX_PAYMENT, PROCENT, MONTH, MROT } from '../../Global'
 import Presenter from './presenter'
+import './popup.css'
 
 const Popup = memo(() => {
   const [inputValue, setInputValue] = useState('')
+  const [visibleForm, setVisibleForm] = useState(false)
 
   const advance = useMemo(() => {
     if (inputValue) {
@@ -15,8 +17,8 @@ const Popup = memo(() => {
         paymentArray.push(remainingAmount)
 
         return paymentArray
-      } else {
-        alert('Сумма ниже МРОТ')
+      } else if (inputValue) {
+        alert('Сумма не введена')
       }
     }
   }, [inputValue])
@@ -28,7 +30,7 @@ const Popup = memo(() => {
     }
   }, [])
 
-  return <Presenter {...{ calculate, advance }} />
+  return <Presenter {...{ calculate, advance, visibleForm, setVisibleForm }} />
 })
 
 export default Popup
