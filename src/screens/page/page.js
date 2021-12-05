@@ -1,10 +1,13 @@
 import React, { memo } from 'react'
+import Popup from '../popup'
 import './page.css'
 
-const Page = memo(({ popup }) => {
+const Page = memo(() => {
   return (
     <div className="page">
-      <div className="popup">{popup}</div>
+      <div className="popup">
+        <Popup />
+      </div>
     </div>
   )
 })

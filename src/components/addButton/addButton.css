@@ -9,6 +9,11 @@
     
 }
 
+.add_button:hover {
+    cursor: pointer;
+    background: #ea0029;
+}
+
 .add_button_text {
     color: white;
 }
