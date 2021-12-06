@@ -2,7 +2,7 @@
   "name": "tax",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://snobiwe.github.io/tax/",
+  "homepage": "https://snobiwe.github.io/tax",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
