@@ -1,17 +1,19 @@
-import React, { memo } from 'react'
+import React, { memo, useCallback } from 'react'
 
 import './salaryForm.css'
 
 const SalaryForm = memo(({ calculate, setVisibleForm }) => {
+  const SalaryFormSubmit = useCallback(
+    (e) => {
+      e.preventDefault()
+      calculate()
+      setVisibleForm(true)
+    },
+    [calculate, setVisibleForm]
+  )
+
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault()
-        calculate()
-        setVisibleForm(true)
-        console.log(calculate)
-      }}
-    >
+    <form onSubmit={SalaryFormSubmit}>
       <fieldset className="salary_fieldset">
         <legend className="popup_legend">Ваша зарплата в месяц</legend>
 
@@ -19,9 +21,7 @@ const SalaryForm = memo(({ calculate, setVisibleForm }) => {
           className="salary_input"
           type="text"
           placeholder="Введите данные"
-        >
-          {}
-        </input>
+        />
       </fieldset>
     </form>
   )

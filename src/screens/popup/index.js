@@ -17,8 +17,8 @@ const Popup = memo(() => {
         paymentArray.push(remainingAmount)
 
         return paymentArray
-      } else if (inputValue) {
-        alert('Сумма не введена')
+      } else {
+        alert('Сумма ниже МРОТ')
       }
     }
   }, [inputValue])

@@ -20,24 +20,19 @@ const Presenter = memo(
             налогового вычета составляет не более 13% от своего официального
             годового дохода.
           </p>
-
           <SalaryForm
             setVisibleForm={setVisibleForm}
             visibleForm={visibleForm}
             calculate={calculate}
           />
+          <AdvanceForm
+            setVisibleForm={setVisibleForm}
+            visibleForm={visibleForm}
+            payments={advance}
+            calculate={calculate}
+          />
+          <QuestionForm />
 
-          <form>
-            <AdvanceForm
-              setVisibleForm={setVisibleForm}
-              visibleForm={visibleForm}
-              payments={advance}
-              calculate={calculate}
-            />
-          </form>
-          <form>
-            <QuestionForm />
-          </form>
           <AddButton />
         </div>
       </div>

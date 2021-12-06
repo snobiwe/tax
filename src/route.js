@@ -5,16 +5,16 @@ import Page from './screens/page/page'
 
 import Start from './screens/start/start'
 
-const Navigation = memo(() => {
+const NavigationStack = memo(() => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Start />}></Route>
+        <Route path="/" element={<Start />} />
 
-        <Route path="page" element={<Page />}></Route>
+        <Route path="page" element={<Page />} />
       </Routes>
     </Router>
   )
 })
 
-export default Navigation
+export default NavigationStack

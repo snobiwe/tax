@@ -1,9 +1,9 @@
-import React, { memo } from 'react'
+import React from 'react'
 import './index.css'
-import Navigation from './route'
+import NavigationStack from './route'
 
-const App = memo(() => {
-  return <Navigation />
-})
+const App = () => {
+  return <NavigationStack />
+}
 
 export default App

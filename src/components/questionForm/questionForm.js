@@ -11,7 +11,7 @@ const QuestionForm = memo(() => {
           className="radio-btn"
           type="radio"
           value={value}
-        ></input>
+        />
         <span className="input_span">{text}</span>
       </label>
     )
@@ -22,23 +22,25 @@ const QuestionForm = memo(() => {
     console.log(e.target.value)
   }
   return (
-    <fieldset className="question_fieldset">
-      <p className="question_title">Что уменьшаем?</p>
-      <div>
-        <Radio
-          value={'Платеж'}
-          onChange={changeValue}
-          checked={value === 'Платеж' ? true : false}
-          text={'Платеж'}
-        />
-        <Radio
-          value={'Срок'}
-          onChange={changeValue}
-          checked={value === 'Срок' ? true : false}
-          text={'Срок'}
-        />
-      </div>
-    </fieldset>
+    <form>
+      <fieldset className="question_fieldset">
+        <p className="question_title">Что уменьшаем?</p>
+        <div>
+          <Radio
+            value={'Платеж'}
+            onChange={changeValue}
+            checked={value === 'Платеж'}
+            text={'Платеж'}
+          />
+          <Radio
+            value={'Срок'}
+            onChange={changeValue}
+            checked={value === 'Срок'}
+            text={'Срок'}
+          />
+        </div>
+      </fieldset>
+    </form>
   )
 })
 
