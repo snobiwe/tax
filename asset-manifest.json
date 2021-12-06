@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tax/static/css/main.21c078d1.chunk.css",
+    "main.js": "/tax/static/js/main.2cc92205.chunk.js",
+    "main.js.map": "/tax/static/js/main.2cc92205.chunk.js.map",
+    "runtime-main.js": "/tax/static/js/runtime-main.cf501f8b.js",
+    "runtime-main.js.map": "/tax/static/js/runtime-main.cf501f8b.js.map",
+    "static/js/2.d68ef910.chunk.js": "/tax/static/js/2.d68ef910.chunk.js",
+    "static/js/2.d68ef910.chunk.js.map": "/tax/static/js/2.d68ef910.chunk.js.map",
+    "index.html": "/tax/index.html",
+    "static/css/main.21c078d1.chunk.css.map": "/tax/static/css/main.21c078d1.chunk.css.map",
+    "static/js/2.d68ef910.chunk.js.LICENSE.txt": "/tax/static/js/2.d68ef910.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/tax/static/media/LabGrotesque-Regular.f45d8fdb.woff2",
+    "static/media/advanceForm.css": "/tax/static/media/Vectorcheck.62a8ceae.svg",
+    "static/media/closeButton.css": "/tax/static/media/Vectorclose.beb7d290.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf501f8b.js",
+    "static/js/2.d68ef910.chunk.js",
+    "static/css/main.21c078d1.chunk.css",
+    "static/js/main.2cc92205.chunk.js"
+  ]
+}
